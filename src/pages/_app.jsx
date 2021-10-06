@@ -1,7 +1,13 @@
-import '../styles/globals.css'
+import { App } from 'tailwind-mobile/react';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    // Wrap our app with App component
+    <App theme="ios">
+      <Component {...pageProps} />
+    </App>
+  );
 }
 
-export default MyApp
+export default MyApp;
