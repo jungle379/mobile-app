@@ -1,5 +1,5 @@
 // import tailwindMobile config
-import tailwindMobile from 'tailwind-mobile/config';
+const tailwindMobile = require('tailwind-mobile/config');
 
 // wrap config with tailwindMobile config
 export default tailwindMobile({
