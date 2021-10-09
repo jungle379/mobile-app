@@ -1,3 +1,4 @@
+import "tailwindcss/tailwind.css";
 import { App } from 'tailwind-mobile/react';
 import '../styles/globals.css';
 
