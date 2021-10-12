@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
 import {
   Page,
   Navbar,
@@ -21,6 +22,12 @@ export default function ToastPage() {
     setter(true);
   };
   return (
+    <>
+    <Head>
+      <title>
+        トーストページ
+      </title>
+    </Head>
     <Page>
       <Navbar
         title="Toast"
@@ -81,5 +88,6 @@ export default function ToastPage() {
         </p>
       </Block>
     </Page>
+    </>
   );
 }
