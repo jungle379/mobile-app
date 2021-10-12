@@ -1,4 +1,5 @@
 // Tailwind Mobile components
+import Head from "next/head";
 import {
   Page,
   Navbar,
@@ -12,6 +13,12 @@ import {
 
 export default function Home() {
   return (
+    <>
+    <Head>
+      <title>
+        トップページ
+      </title>
+    </Head>
     <Page>
       <Navbar title="My App" />
 
@@ -32,5 +39,6 @@ export default function Home() {
         <Button>Button 2</Button>
       </Block>
     </Page>
+    </>
   );
 }

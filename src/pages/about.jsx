@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from "next/head";
 import {
   Page,
   Navbar,
@@ -16,6 +17,12 @@ export default function RadioPage() {
   const [mediaValue, setMediaValue] = useState('Item 1');
 
   return (
+    <>
+    <Head>
+      <title>
+      radio_button_page
+      </title>
+    </Head>
     <Page>
       <Navbar
         title="Radio"
@@ -179,5 +186,6 @@ export default function RadioPage() {
         />
       </List>
     </Page>
+    </>
   );
 }
