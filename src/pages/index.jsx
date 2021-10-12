@@ -35,7 +35,7 @@ export default function Home() {
       </List>
 
       <Block strong className="flex space-x-4">
-        <Button>Button 1</Button>
+        <Button href="/test1/">Button 1</Button>
         <Button>Button 2</Button>
       </Block>
     </Page>
