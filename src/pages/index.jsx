@@ -36,7 +36,8 @@ export default function Home() {
 
       <Block strong className="flex space-x-4">
         <Button href="/test1/">Button 1</Button>
-        <Button>Button 2</Button>
+        <Button href="/test2/">Button 2</Button>
+        <Button href="/test3/">Button 3</Button>
       </Block>
     </Page>
     </>
