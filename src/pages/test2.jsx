@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from "next/head";
 import {
   Page,
   Navbar,
@@ -10,6 +11,12 @@ import {
 
 export default function ChipsPage() {
   return (
+    <>
+    <Head>
+      <title>
+        chips_page
+      </title>
+    </Head>
     <Page>
       <Navbar
         title="Chips"
@@ -176,5 +183,6 @@ export default function ChipsPage() {
         </Chip>
       </Block>
     </Page>
+    </>
   );
 }
