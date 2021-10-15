@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import Head from "next/head";
 import {
   Page,
   Navbar,
@@ -21,6 +22,10 @@ export default function PopoverPage() {
   };
 
   return (
+    <>
+    <Head>
+      <title>popend_page</title>
+    </Head>
     <Page>
       <Navbar
         title="Popover"
@@ -136,5 +141,6 @@ export default function PopoverPage() {
         </List>
       </Popover>
     </Page>
+    </>
   );
 }
