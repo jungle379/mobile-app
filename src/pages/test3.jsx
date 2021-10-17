@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from "next/head";
 import {
   Page,
   Navbar,
@@ -10,6 +11,10 @@ import {
 
 export default function PreloaderPage() {
   return (
+    <>
+    <Head>
+    <title>ローディングテストページ</title>
+    </Head>
     <Page>
       <Navbar
         title="Preloader"
@@ -52,5 +57,6 @@ export default function PreloaderPage() {
         </div>
       </Block>
     </Page>
+    </>
   );
 }
